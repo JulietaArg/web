@@ -1,0 +1,613 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0px;
+
+}
+
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.5em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.50em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+
+/*Sección 1*/
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #075c3b ; 
+}
+button:hover {
+    background-color: #1a906a ;
+    transition: all 0.2s;
+}
+
+.container  {
+    max-width: 1400px;
+    width: 80%; /* Asegura que tenga un ancho definido */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.color-acento{color: #f2e9c5;}
+/*cambiar etiqueta*/
+
+header{
+    background-color: rgb(255, 255, 255);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #075c3b;
+    font-size: 1.4em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: #1a906a;
+}
+
+.invisible{
+    color:rgb(245, 245, 245);
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("img/Portada-.PFOAjpg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    
+
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+
+
+
+
+/*Sección 2*/
+
+
+#somosnaturales .container{
+    text-align: center;
+    padding: 100px 12px;
+
+}
+
+.acento-color{
+    color: #075c3b;
+}
+
+/*Sección 3*/
+
+#nuestros-programas{
+    background-color: #075c3b;
+    color: #756f5a;
+    text-align: center;
+    }
+#nuestros-programas .container{
+    padding: 150px 12px;
+}
+#nuestros-programas h2{
+    color: #f2e9c5;
+    margin-top: 0;
+}
+#nuestros-programas p{
+    display: none;
+}
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+.carta:first-child{
+    background-color: #f2e9c5;
+    
+    
+
+}
+.carta:nth-child(2){
+    background-color: #f2e9c5;
+
+}
+.carta:nth-child(3){
+    background-color: #f2e9c5;
+
+}
+
+
+
+/*Sección 4*/
+
+
+
+#caracteristicas .container{
+    
+    padding: 200px 12px;
+    text-align: initial;
+}
+
+
+#caracteristicas li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+
+/*Sección 5*/
+
+#abajo-del-todo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb( 30, 30, 30);
+    height: 80vh;
+}
+
+#final button{
+    font-size: 1.75em;
+    
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+footer p{
+    margin: 0px;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+
+@media (max-width: 719px) {
+
+    .contenedor-gmail {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    .formulario {
+  position: relative; 
+  z-index: 1;
+  background-color: rgba(246, 238, 223, 0.9); 
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0; 
+  border: 3px solid #075c3b;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.formulario-titulo {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #075c3b;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+
+.form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #075c3b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #1a906a;
+}
+
+    .mapa {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+    .mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+/* Sección redes sociales*/
+
+    #caracteristicas .container-logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 30px;
+  }
+
+
+  .texto-logo {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .redes-sociales {
+    display: flex;       
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;      
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .redes-sociales li a {
+    position: static;
+    left: auto;
+    top: auto;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    
+  }
+
+ 
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container-img img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/*footer*/
+
+  footer .container{
+ justify-content: left;
+  }
+
+}
+
+/*Estilos para escritorio*/
+
+
+
+@media (min-width: 720px) {
+
+    /*Sección 1*/
+    header{
+        position: fixed;
+        width: 100%;
+        
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 1px;
+    }
+
+    /*Sección 2*/
+    #somosnaturales .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #somosnaturales .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #somosnaturales h2{
+        margin-top: 0px;
+        text-align: center;
+    }
+    
+    #somosnaturales .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.20),
+            rgba(0,0,0,0.5)
+        ), 
+        url(Img/promo.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+
+    /*Sección 3*/
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestros-programas h3{
+        margin-top: 0px;
+    }
+    #nuestros-programas .carta{
+        padding: 20px;
+        
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+
+    /*Sección 4*/
+    .contenedor-gmail{
+    background-color: #1a906a;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #075c3b;
+    position: relative;
+}
+
+    .mapa{
+    width: 100%;
+    height: 78vh;
+
+}
+
+    .mapa iframe{
+    width: 100%;
+    height: 78vh;
+}
+
+    .formulario{
+    position: absolute;
+    bottom: 10px;
+    background-color: #f6eedf;
+    width: 30%;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    border: 3px solid #075c3b ;
+}
+
+    .formulario-titulo{
+    font-size: 45px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+    .form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+    .item-1, .item-2{
+    width: 95%;
+    height: 45px;
+    margin: 7px auto;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+
+    .item-3{
+    width: 97.6%;
+    height: 45px;
+    margin: 7px auto;
+    grid-column: 1/3;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+    .textarea{
+    width: 98%;
+    height: 100px;
+    margin: 7px auto;
+    grid-column: 1/3;
+    outline: none;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+    .submit{
+    width: 30%;
+    height: 45px;
+    margin: 7px auto;
+    grid-column: 1/3;
+    outline: none;
+
+}
+
+    /*Sección 5*/
+
+    #caracteristicas .container-logos{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    
+    #caracteristicas .texto-logo{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .redes-sociales {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 360px;
+      left: 370px;
+}
+
+
+   .redes-sociales li a {
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+      transition: color 0.3s;
+}
+
+    .redes-sociales li a:hover{
+        color: #075c3b;
+    }
+
+
+    #caracteristicas h2{
+        margin-top: 0px;
+        text-align: center;
+    }
+    
+    #caracteristicas .container-img{
+        
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 300px;
+    }
+    
+    .container-img img {
+      width: 105%;
+     height: auto;
+     display: block;
+     margin-top: 100px;
+}   
+
+
+
+    /*Sección 6*/
+
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+
